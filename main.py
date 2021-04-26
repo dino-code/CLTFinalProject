@@ -1,9 +1,12 @@
 def print_output(step, curr_state, unread_input, stack, delta_rule, r_rule):
     # This method prints the output of each row (step) in the output table.
+    temp_stack = stack.copy()
+    temp_stack.reverse()
+
     print('step:', step)
     print('curr_state:', curr_state)
     print('unread_input:', unread_input)
-    print('stack', *stack) # prints stack in one line
+    print('stack', *temp_stack) # prints stack in one line
     print('delta_rule', delta_rule)
     print('r_rule', r_rule)
     print()
