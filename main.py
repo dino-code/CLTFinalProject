@@ -15,6 +15,8 @@ inputs = [
 ]
 
 delta_rules = {
+    # delta_rules[(curr_state, next_input, top_of_stack)]
+    # example delta_rules[('p', 'e', 'e')] = ('1. (p, e, e) -> (q, S)', 'q')
     ('p', 'e', 'e') : ('1. (p, e, e) -> (q, S)', 'q'), 
     ('q', 'a', 'e') : ('2. (q, a, e) -> (q_a, e)', 'q_a'),
     ('q_a', 'e', 'a') : ('3. (q_a, e, a) -> (q, e)', 'q'), 
