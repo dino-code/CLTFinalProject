@@ -50,14 +50,13 @@ for unread_input in inputs:
     stack.append('S')
 
     while (curr_state != 'q_$'):
-        top_of_stack = stack[-1]
         top_of_unread_input=unread_input[0]
         step+=1
         if curr_state=='q': #(this is a lookahead state)
             next_state = delta_rules[(curr_state, top_of_unread_input[0],'e')][1]      #should return q_a or q_b
             
             if next_state == 'q_$':
-                if stack.empty():
+                if len(stack)==0:
                     curr_state = 'q_$'
                     #delta_rule
                     print('accepted')
@@ -66,9 +65,13 @@ for unread_input in inputs:
                     print('not accepted')
                     break
             temp_delta_rule=delta_rules[(curr_state,top_of_unread_input,'e')][0]
-            unread_input=unread_input[:-1]
+
+            unread_input=unread_input[1:]
+            
             curr_state = next_state
 
+
+        top_of_stack = stack[-1]
 
         if curr_state == 'q_a' or curr_state == 'q_b':
             next_state = delta_rules[(curr_state, 'e', top_of_stack)][1] 
