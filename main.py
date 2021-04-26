@@ -28,8 +28,8 @@ delta_rules = {
 r_rules = {
     # r_rule key is the value of delta_rule
     # example r_rules[delta_rules[('q_a', 'e', 'S')]] = 'S -> aSb'
-    ('7. (q_a, e, S) -> (q_a, aSb)', 'q_a') : 'S -> aSb', 
-    ('8. (q_b, e, S) -> (q_b, e)', 'q_b') : 'S -> e'
+    ('7. (q_a, e, S) -> (q_a, aSb)') : 'S -> aSb', 
+    ('8. (q_b, e, S) -> (q_b, e)') : 'S -> e'
 }
 
 for unread_input in inputs:
@@ -51,23 +51,25 @@ for unread_input in inputs:
         top_of_unread_input=unread_input[0]
         step+=1
         if curr_state=='q': #(this is a lookahead state)
-            next_state = delta_rules[(curr_state, top_of_unread_input[0])]      #should return q_a or q_b
+            next_state = delta_rules[(curr_state, top_of_unread_input[0])][1]      #should return q_a or q_b
             
             if next_state == 'q_$':
                 if stack.empty():
                     curr_state = 'q_$'
                     #delta_rule
-                    return True	
+                    print('accepted')
+                    break
                 else:
-                    return False
-            temp_delta_rule=delta_rules[(curr_state,top_of_unread_input,'e')]
+                    print('not accepted')
+                    break
+            temp_delta_rule=delta_rules[(curr_state,top_of_unread_input,'e')][0]
             unread_input=unread_input[:-1]
             curr_state = next_state
 
 
         if curr_state == 'q_a' or curr_state == 'q_b':
             next_state = dict[(curr_state, top_of_unread_input[0])] 
-            temp_delta_rule=delta_rules[(curr_state,'e',top_of_stack)]
+            temp_delta_rule=delta_rules[(curr_state,'e',top_of_stack)][0]
             if top_of_stack == curr_state[-1]:    # will be a or b
                 curr_state = 'q'
                 stack.pop()
