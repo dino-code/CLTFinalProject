@@ -1,3 +1,12 @@
+def print_output(step, curr_state, unread_input, stack, delta_rule, r_rule):
+    # This method prints the output of each row (step) in the output table.
+    print('step:', step)
+    print('curr_state:', curr_state)
+    print('unread_input:', unread_input)
+    print('stack', *stack) # prints stack in one line
+    print('delta_rule', delta_rule)
+    print('r_rule', r_rule)
+
 inputs = [
     "ab$", "aabb$", "aaabbb$", "aaaabbbb$", 
     "aaaaabbbbb$", "aaaaaabbbbbb$",
@@ -14,12 +23,13 @@ delta_rules = {
 }
 
 for unread_input in inputs:
+    # initial start state for each unread_input
     curr_state = 'p'
     stack = []
-    # for actual program have a vector of inputs.
     step = 0
     delta_rule = 'null'
     r_rule = 'null'
+
 
     print(step + curr_state + unread_input Stack delta rule R rule) # headers
     print(step + 'p' + input + stack + dela_rule, r_rule) #printing first step
