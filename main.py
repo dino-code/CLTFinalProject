@@ -6,6 +6,7 @@ def print_output(step, curr_state, unread_input, stack, delta_rule, r_rule):
     print('stack', *stack) # prints stack in one line
     print('delta_rule', delta_rule)
     print('r_rule', r_rule)
+    print()
 
 inputs = [
     "ab$", "aabb$", "aaabbb$", "aaaabbbb$", 
@@ -53,7 +54,7 @@ for unread_input in inputs:
         top_of_unread_input=unread_input[0]
         step+=1
         if curr_state=='q': #(this is a lookahead state)
-            next_state = delta_rules[(curr_state, top_of_unread_input[0])][1]      #should return q_a or q_b
+            next_state = delta_rules[(curr_state, top_of_unread_input[0],'e')][1]      #should return q_a or q_b
             
             if next_state == 'q_$':
                 if stack.empty():
@@ -70,7 +71,7 @@ for unread_input in inputs:
 
 
         if curr_state == 'q_a' or curr_state == 'q_b':
-            next_state = dict[(curr_state, top_of_unread_input[0])] 
+            next_state = delta_rules[(curr_state, top_of_unread_input[0],'e')][1] 
             temp_delta_rule=delta_rules[(curr_state,'e',top_of_stack)][0]
             if top_of_stack == curr_state[-1]:    # will be a or b
                 curr_state = 'q'
