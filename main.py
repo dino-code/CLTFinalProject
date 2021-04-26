@@ -48,7 +48,7 @@ for unread_input in inputs:
 
     curr_state = 'q'
     stack.append('S')
-
+    print_output(step, curr_state, unread_input, stack, delta_rules[('q', 'a', 'e')][0], r_rule)
     while (curr_state != 'q_$'):
         top_of_unread_input=unread_input[0]
         step+=1
