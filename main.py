@@ -1,28 +1,31 @@
-inputs = ['aabb']
+inputs = [
+    "ab$", "aabb$", "aaabbb$", "aaaabbbb$", 
+    "aaaaabbbbb$", "aaaaaabbbbbb$",
+    "aaaaaaabbbbbbb$", "aaaaaaaabbbbbbbb$", 
+    "aaaaaaaaabbbbbbbbb$", "aaaaaaaaaabbbbbbbbbb$"
+]
 
 delta_rules = {
     ('p', 'e', 'e') : 1, ('q', 'a', 'e') : 2,
     ('q_a', 'e', 'a') : 3, ('q', 'b', 'e') : 4,
     ('q_b', 'e', 'b') : 5, ('q', '$', 'e') : 6,
-    ('q_a', 'e', 'S') : 6
-
-
-
+    ('q_a', 'e', 'S') : 6, ('q_a', 'e', 'S') : 7,
+    ('q_b', 'e', 'S') : 8
 }
 
-for input in inputs:
+for unread_input in inputs:
     curr_state = 'p'
     stack = []
     # for actual program have a vector of inputs.
-	step = 0
-	delta_rule = 'null'
-	r_rule = 'null'
+    step = 0
+    delta_rule = 'null'
+    r_rule = 'null'
 
-	print(step State unread_input Stack delta rule R rule) # headers
-	print(step + 'p' + input + stack +dela_rule, r_rule) #printing first step
+    print(step + curr_state + unread_input Stack delta rule R rule) # headers
+    print(step + 'p' + input + stack + dela_rule, r_rule) #printing first step
 
-	Curr_state = 'q'
-	stack.push(S)
+    curr_state = 'q'
+    stack.append('S')
 
 while (curr_state != ‘q_$’):
 
