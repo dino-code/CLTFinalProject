@@ -63,7 +63,7 @@ for unread_input in inputs:
                 else:
                     return False
             temp_delta_rule=delta_rules[(curr_state,top_of_unread_input,'e')]
-            unread_input.pop()
+            unread_input=unread_input[:-1]
             curr_state = next_state
 
 
@@ -83,5 +83,5 @@ for unread_input in inputs:
             
             
 
-
-        print (step, ' ', curr_state, ' ', unread_input, ' ', top_of_stack, ' ', temp_delta_rule)
+        
+        print_output(step, curr_state, unread_input, stack, temp_delta_rule, r_rule)
