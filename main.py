@@ -1,14 +1,24 @@
 inputs = ['aabb']
 
-For input in inputs:
-Curr_state = 'p'
-Stack = []
+delta_rules = {
+    ('p', 'e', 'e') : 1, ('q', 'a', 'e') : 2,
+    ('q_a', 'e', 'a') : 3, ('q', 'b', 'e') : 4,
+    ('q_b', 'e', 'b') : 5, ('q', '$', 'e') : 6,
+    ('q_a', 'e', 'S') : 6
+
+
+
+}
+
+for input in inputs:
+    curr_state = 'p'
+    stack = []
     # for actual program have a vector of inputs.
 	step = 0
-	Delta_rule = 'null'
-	R_rule = 'null'
+	delta_rule = 'null'
+	r_rule = 'null'
 
-	print(Step State unread_input Stack delta rule R rule) # headers
+	print(step State unread_input Stack delta rule R rule) # headers
 	print(step + 'p' + input + stack +dela_rule, r_rule) #printing first step
 
 	Curr_state = 'q'
