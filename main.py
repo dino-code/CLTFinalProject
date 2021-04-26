@@ -36,6 +36,8 @@ r_rules = {
 }
 
 for unread_input in inputs:
+    print("initial input: ", unread_input)
+    print("--------------------------------")
     # initial start state for each unread_input
     curr_state = 'p'
     stack = []
