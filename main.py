@@ -24,15 +24,15 @@ for input in inputs:
 	Curr_state = 'q'
 	stack.push(S)
 
-while (curr_state != ‘q_$’):
-
+while (curr_state != 'q_$'):
+    temp_delta_rule=delta_rules[(curr_state,unread_input[-1])]
     step+=1
     if curr_state=='q': #(this is a lookahead state)
         next_state = dict[(curr_state, unread_input[0])]      #should return q_a or q_b
         if next_state == 'q_$':
             if stack.empty():
                 curr_state = 'q_$'
-                delta_rule
+                #delta_rule
                 return True	
             else:
                 return False
