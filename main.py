@@ -15,11 +15,21 @@ inputs = [
 ]
 
 delta_rules = {
-    ('p', 'e', 'e') : 1, ('q', 'a', 'e') : 2,
-    ('q_a', 'e', 'a') : 3, ('q', 'b', 'e') : 4,
-    ('q_b', 'e', 'b') : 5, ('q', '$', 'e') : 6,
-    ('q_a', 'e', 'S') : 6, ('q_a', 'e', 'S') : 7,
-    ('q_b', 'e', 'S') : 8
+    ('p', 'e', 'e') : ('1. (p, e, e) -> (q, S)', 'q'), 
+    ('q', 'a', 'e') : ('2. (q, a, e) -> (q_a, e)', 'q_a'),
+    ('q_a', 'e', 'a') : ('3. (q_a, e, a) -> (q, e)', 'q'), 
+    ('q', 'b', 'e') : ('4. (q, b, e) -> (q_b, e)', 'q_b'),
+    ('q_b', 'e', 'b') : ('5. (q_b, e, b) -> (q, e)', 'q'), 
+    ('q', '$', 'e') : ('6. (q, $, e) -> (q_$, e)', 'q_$'),
+    ('q_a', 'e', 'S') : ('7. (q_a, e, S) -> (q_a, aSb)', 'q_a'),
+    ('q_b', 'e', 'S') : ('8. (q_b, e, S) -> (q_b, e)', 'q_b')
+}
+
+r_rules = {
+    # r_rule key is the value of delta_rule
+    # example r_rules[delta_rules[('q_a', 'e', 'S')]] = 'S -> aSb'
+    ('7. (q_a, e, S) -> (q_a, aSb)', 'q_a') : 'S -> aSb', 
+    ('8. (q_b, e, S) -> (q_b, e)', 'q_b') : 'S -> e'
 }
 
 for unread_input in inputs:
@@ -30,9 +40,8 @@ for unread_input in inputs:
     delta_rule = 'null'
     r_rule = 'null'
 
-
-    print(step + curr_state + unread_input Stack delta rule R rule) # headers
-    print(step + 'p' + input + stack + dela_rule, r_rule) #printing first step
+    # print step 0
+    print_output(step, curr_state, unread_input, stack, delta_rule, r_rule)
 
     curr_state = 'q'
     stack.append('S')
