@@ -15,7 +15,7 @@ inputs = [
     "ab$", "aabb$", "aaabbb$", "aaaabbbb$", 
     "aaaaabbbbb$", "aaaaaabbbbbb$",
     "aaaaaaabbbbbbb$", "aaaaaaaabbbbbbbb$", 
-    "aaaaaaaaabbbbbbbbb$", "aaaaaaaaaabbbbbbbbbb$"
+    "aaaaaaaaabbbbbbbbb$", "aaaaaaaaaabbbbbbbbbb$","$"
 ]
 
 delta_rules = {
@@ -50,10 +50,10 @@ for unread_input in inputs:
 
     # print step 0
     print_output(step, curr_state, unread_input, stack, delta_rule, r_rule)
-
+    step+=1
     curr_state = 'q'
     stack.append('S')
-    print_output(step, curr_state, unread_input, stack, delta_rules[('q', 'a', 'e')][0], r_rule)
+    print_output(step, curr_state, unread_input, stack, delta_rules[('p','e','e')][0], r_rule)
     while (curr_state != 'q_$'):
         top_of_unread_input=unread_input[0]
         step+=1
@@ -62,29 +62,33 @@ for unread_input in inputs:
             
             if next_state == 'q_$':
                 if len(stack)==0:
-                    curr_state = 'q_$'
+                    curr_state = next_state
                     #delta_rule
-                    print('accepted')
+                    temp_delta_rule=delta_rules[('q','$','e')][0]
+                    print_output(step, curr_state, unread_input, stack, temp_delta_rule, r_rule)
+                    print('Accepted Final State Achieved')
                     break
                 else:
                     print('not accepted')
                     break
             temp_delta_rule=delta_rules[(curr_state,top_of_unread_input,'e')][0]
-
+            r_rule='Null'
             unread_input=unread_input[1:]
             
             curr_state = next_state
 
 
-        top_of_stack = stack[-1]
+        
 
-        if curr_state == 'q_a' or curr_state == 'q_b':
+        elif curr_state == 'q_a' or curr_state == 'q_b':
+            top_of_stack = stack[-1]
             next_state = delta_rules[(curr_state, 'e', top_of_stack)][1] 
             temp_delta_rule=delta_rules[(curr_state,'e',top_of_stack)][0]
             if top_of_stack == curr_state[-1]:    # will be a or b
                 curr_state = 'q'
                 stack.pop()
             if top_of_stack == 'S':
+                r_rule=r_rules[temp_delta_rule]
                 stack.pop()
                 if curr_state == 'q_a':
                     stack.append('b')
@@ -93,6 +97,8 @@ for unread_input in inputs:
             curr_state = next_state
             
             
+        
 
         
         print_output(step, curr_state, unread_input, stack, temp_delta_rule, r_rule)
+        r_rule='null'
