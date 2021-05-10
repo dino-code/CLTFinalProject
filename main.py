@@ -15,7 +15,7 @@ inputs = [
     "ab$", "aabb$", "aaabbb$", "aaaabbbb$", 
     "aaaaabbbbb$", "aaaaaabbbbbb$",
     "aaaaaaabbbbbbb$", "aaaaaaaabbbbbbbb$", 
-    "aaaaaaaaabbbbbbbbb$", "aaaaaaaaaabbbbbbbbbb$","$"
+    "aaaaaaaaabbbbbbbbb$", "aaaaaaaaaabbbbbbbbbb$"
 ]
 
 delta_rules = {
