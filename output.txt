@@ -1,0 +1,2235 @@
+initial input:  ab$
+--------------------------------
+step: 0
+curr_state: p
+unread_input: ab$
+stack
+delta_rule null
+r_rule null
+
+step: 1
+curr_state: q
+unread_input: ab$
+stack S
+delta_rule 1. (p, e, e) -> (q, S)
+r_rule null
+
+step: 2
+curr_state: q_a
+unread_input: b$
+stack S
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 3
+curr_state: q_a
+unread_input: b$
+stack a S b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 4
+curr_state: q
+unread_input: b$
+stack S b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 5
+curr_state: q_b
+unread_input: $
+stack S b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 6
+curr_state: q_b
+unread_input: $
+stack b
+delta_rule 8. (q_b, e, S) -> (q_b, e)
+r_rule S -> e
+
+step: 7
+curr_state: q
+unread_input: $
+stack
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 8
+curr_state: q_$
+unread_input: $
+stack
+delta_rule 6. (q, $, e) -> (q_$, e)
+r_rule null
+
+Accepted Final State Achieved
+initial input:  aabb$
+--------------------------------
+step: 0
+curr_state: p
+unread_input: aabb$
+stack
+delta_rule null
+r_rule null
+
+step: 1
+curr_state: q
+unread_input: aabb$
+stack S
+delta_rule 1. (p, e, e) -> (q, S)
+r_rule null
+
+step: 2
+curr_state: q_a
+unread_input: abb$
+stack S
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 3
+curr_state: q_a
+unread_input: abb$
+stack a S b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 4
+curr_state: q
+unread_input: abb$
+stack S b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 5
+curr_state: q_a
+unread_input: bb$
+stack S b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 6
+curr_state: q_a
+unread_input: bb$
+stack a S b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 7
+curr_state: q
+unread_input: bb$
+stack S b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 8
+curr_state: q_b
+unread_input: b$
+stack S b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 9
+curr_state: q_b
+unread_input: b$
+stack b b
+delta_rule 8. (q_b, e, S) -> (q_b, e)
+r_rule S -> e
+
+step: 10
+curr_state: q
+unread_input: b$
+stack b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 11
+curr_state: q_b
+unread_input: $
+stack b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 12
+curr_state: q
+unread_input: $
+stack
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 13
+curr_state: q_$
+unread_input: $
+stack
+delta_rule 6. (q, $, e) -> (q_$, e)
+r_rule null
+
+Accepted Final State Achieved
+initial input:  aaabbb$
+--------------------------------
+step: 0
+curr_state: p
+unread_input: aaabbb$
+stack
+delta_rule null
+r_rule null
+
+step: 1
+curr_state: q
+unread_input: aaabbb$
+stack S
+delta_rule 1. (p, e, e) -> (q, S)
+r_rule null
+
+step: 2
+curr_state: q_a
+unread_input: aabbb$
+stack S
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 3
+curr_state: q_a
+unread_input: aabbb$
+stack a S b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 4
+curr_state: q
+unread_input: aabbb$
+stack S b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 5
+curr_state: q_a
+unread_input: abbb$
+stack S b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 6
+curr_state: q_a
+unread_input: abbb$
+stack a S b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 7
+curr_state: q
+unread_input: abbb$
+stack S b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 8
+curr_state: q_a
+unread_input: bbb$
+stack S b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 9
+curr_state: q_a
+unread_input: bbb$
+stack a S b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 10
+curr_state: q
+unread_input: bbb$
+stack S b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 11
+curr_state: q_b
+unread_input: bb$
+stack S b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 12
+curr_state: q_b
+unread_input: bb$
+stack b b b
+delta_rule 8. (q_b, e, S) -> (q_b, e)
+r_rule S -> e
+
+step: 13
+curr_state: q
+unread_input: bb$
+stack b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 14
+curr_state: q_b
+unread_input: b$
+stack b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 15
+curr_state: q
+unread_input: b$
+stack b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 16
+curr_state: q_b
+unread_input: $
+stack b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 17
+curr_state: q
+unread_input: $
+stack
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 18
+curr_state: q_$
+unread_input: $
+stack
+delta_rule 6. (q, $, e) -> (q_$, e)
+r_rule null
+
+Accepted Final State Achieved
+initial input:  aaaabbbb$
+--------------------------------
+step: 0
+curr_state: p
+unread_input: aaaabbbb$
+stack
+delta_rule null
+r_rule null
+
+step: 1
+curr_state: q
+unread_input: aaaabbbb$
+stack S
+delta_rule 1. (p, e, e) -> (q, S)
+r_rule null
+
+step: 2
+curr_state: q_a
+unread_input: aaabbbb$
+stack S
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 3
+curr_state: q_a
+unread_input: aaabbbb$
+stack a S b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 4
+curr_state: q
+unread_input: aaabbbb$
+stack S b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 5
+curr_state: q_a
+unread_input: aabbbb$
+stack S b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 6
+curr_state: q_a
+unread_input: aabbbb$
+stack a S b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 7
+curr_state: q
+unread_input: aabbbb$
+stack S b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 8
+curr_state: q_a
+unread_input: abbbb$
+stack S b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 9
+curr_state: q_a
+unread_input: abbbb$
+stack a S b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 10
+curr_state: q
+unread_input: abbbb$
+stack S b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 11
+curr_state: q_a
+unread_input: bbbb$
+stack S b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 12
+curr_state: q_a
+unread_input: bbbb$
+stack a S b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 13
+curr_state: q
+unread_input: bbbb$
+stack S b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 14
+curr_state: q_b
+unread_input: bbb$
+stack S b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 15
+curr_state: q_b
+unread_input: bbb$
+stack b b b b
+delta_rule 8. (q_b, e, S) -> (q_b, e)
+r_rule S -> e
+
+step: 16
+curr_state: q
+unread_input: bbb$
+stack b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 17
+curr_state: q_b
+unread_input: bb$
+stack b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 18
+curr_state: q
+unread_input: bb$
+stack b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 19
+curr_state: q_b
+unread_input: b$
+stack b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 20
+curr_state: q
+unread_input: b$
+stack b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 21
+curr_state: q_b
+unread_input: $
+stack b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 22
+curr_state: q
+unread_input: $
+stack
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 23
+curr_state: q_$
+unread_input: $
+stack
+delta_rule 6. (q, $, e) -> (q_$, e)
+r_rule null
+
+Accepted Final State Achieved
+initial input:  aaaaabbbbb$
+--------------------------------
+step: 0
+curr_state: p
+unread_input: aaaaabbbbb$
+stack
+delta_rule null
+r_rule null
+
+step: 1
+curr_state: q
+unread_input: aaaaabbbbb$
+stack S
+delta_rule 1. (p, e, e) -> (q, S)
+r_rule null
+
+step: 2
+curr_state: q_a
+unread_input: aaaabbbbb$
+stack S
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 3
+curr_state: q_a
+unread_input: aaaabbbbb$
+stack a S b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 4
+curr_state: q
+unread_input: aaaabbbbb$
+stack S b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 5
+curr_state: q_a
+unread_input: aaabbbbb$
+stack S b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 6
+curr_state: q_a
+unread_input: aaabbbbb$
+stack a S b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 7
+curr_state: q
+unread_input: aaabbbbb$
+stack S b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 8
+curr_state: q_a
+unread_input: aabbbbb$
+stack S b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 9
+curr_state: q_a
+unread_input: aabbbbb$
+stack a S b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 10
+curr_state: q
+unread_input: aabbbbb$
+stack S b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 11
+curr_state: q_a
+unread_input: abbbbb$
+stack S b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 12
+curr_state: q_a
+unread_input: abbbbb$
+stack a S b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 13
+curr_state: q
+unread_input: abbbbb$
+stack S b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 14
+curr_state: q_a
+unread_input: bbbbb$
+stack S b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 15
+curr_state: q_a
+unread_input: bbbbb$
+stack a S b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 16
+curr_state: q
+unread_input: bbbbb$
+stack S b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 17
+curr_state: q_b
+unread_input: bbbb$
+stack S b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 18
+curr_state: q_b
+unread_input: bbbb$
+stack b b b b b
+delta_rule 8. (q_b, e, S) -> (q_b, e)
+r_rule S -> e
+
+step: 19
+curr_state: q
+unread_input: bbbb$
+stack b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 20
+curr_state: q_b
+unread_input: bbb$
+stack b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 21
+curr_state: q
+unread_input: bbb$
+stack b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 22
+curr_state: q_b
+unread_input: bb$
+stack b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 23
+curr_state: q
+unread_input: bb$
+stack b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 24
+curr_state: q_b
+unread_input: b$
+stack b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 25
+curr_state: q
+unread_input: b$
+stack b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 26
+curr_state: q_b
+unread_input: $
+stack b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 27
+curr_state: q
+unread_input: $
+stack
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 28
+curr_state: q_$
+unread_input: $
+stack
+delta_rule 6. (q, $, e) -> (q_$, e)
+r_rule null
+
+Accepted Final State Achieved
+initial input:  aaaaaabbbbbb$
+--------------------------------
+step: 0
+curr_state: p
+unread_input: aaaaaabbbbbb$
+stack
+delta_rule null
+r_rule null
+
+step: 1
+curr_state: q
+unread_input: aaaaaabbbbbb$
+stack S
+delta_rule 1. (p, e, e) -> (q, S)
+r_rule null
+
+step: 2
+curr_state: q_a
+unread_input: aaaaabbbbbb$
+stack S
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 3
+curr_state: q_a
+unread_input: aaaaabbbbbb$
+stack a S b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 4
+curr_state: q
+unread_input: aaaaabbbbbb$
+stack S b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 5
+curr_state: q_a
+unread_input: aaaabbbbbb$
+stack S b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 6
+curr_state: q_a
+unread_input: aaaabbbbbb$
+stack a S b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 7
+curr_state: q
+unread_input: aaaabbbbbb$
+stack S b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 8
+curr_state: q_a
+unread_input: aaabbbbbb$
+stack S b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 9
+curr_state: q_a
+unread_input: aaabbbbbb$
+stack a S b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 10
+curr_state: q
+unread_input: aaabbbbbb$
+stack S b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 11
+curr_state: q_a
+unread_input: aabbbbbb$
+stack S b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 12
+curr_state: q_a
+unread_input: aabbbbbb$
+stack a S b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 13
+curr_state: q
+unread_input: aabbbbbb$
+stack S b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 14
+curr_state: q_a
+unread_input: abbbbbb$
+stack S b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 15
+curr_state: q_a
+unread_input: abbbbbb$
+stack a S b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 16
+curr_state: q
+unread_input: abbbbbb$
+stack S b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 17
+curr_state: q_a
+unread_input: bbbbbb$
+stack S b b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 18
+curr_state: q_a
+unread_input: bbbbbb$
+stack a S b b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 19
+curr_state: q
+unread_input: bbbbbb$
+stack S b b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 20
+curr_state: q_b
+unread_input: bbbbb$
+stack S b b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 21
+curr_state: q_b
+unread_input: bbbbb$
+stack b b b b b b
+delta_rule 8. (q_b, e, S) -> (q_b, e)
+r_rule S -> e
+
+step: 22
+curr_state: q
+unread_input: bbbbb$
+stack b b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 23
+curr_state: q_b
+unread_input: bbbb$
+stack b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 24
+curr_state: q
+unread_input: bbbb$
+stack b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 25
+curr_state: q_b
+unread_input: bbb$
+stack b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 26
+curr_state: q
+unread_input: bbb$
+stack b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 27
+curr_state: q_b
+unread_input: bb$
+stack b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 28
+curr_state: q
+unread_input: bb$
+stack b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 29
+curr_state: q_b
+unread_input: b$
+stack b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 30
+curr_state: q
+unread_input: b$
+stack b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 31
+curr_state: q_b
+unread_input: $
+stack b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 32
+curr_state: q
+unread_input: $
+stack
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 33
+curr_state: q_$
+unread_input: $
+stack
+delta_rule 6. (q, $, e) -> (q_$, e)
+r_rule null
+
+Accepted Final State Achieved
+initial input:  aaaaaaabbbbbbb$
+--------------------------------
+step: 0
+curr_state: p
+unread_input: aaaaaaabbbbbbb$
+stack
+delta_rule null
+r_rule null
+
+step: 1
+curr_state: q
+unread_input: aaaaaaabbbbbbb$
+stack S
+delta_rule 1. (p, e, e) -> (q, S)
+r_rule null
+
+step: 2
+curr_state: q_a
+unread_input: aaaaaabbbbbbb$
+stack S
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 3
+curr_state: q_a
+unread_input: aaaaaabbbbbbb$
+stack a S b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 4
+curr_state: q
+unread_input: aaaaaabbbbbbb$
+stack S b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 5
+curr_state: q_a
+unread_input: aaaaabbbbbbb$
+stack S b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 6
+curr_state: q_a
+unread_input: aaaaabbbbbbb$
+stack a S b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 7
+curr_state: q
+unread_input: aaaaabbbbbbb$
+stack S b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 8
+curr_state: q_a
+unread_input: aaaabbbbbbb$
+stack S b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 9
+curr_state: q_a
+unread_input: aaaabbbbbbb$
+stack a S b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 10
+curr_state: q
+unread_input: aaaabbbbbbb$
+stack S b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 11
+curr_state: q_a
+unread_input: aaabbbbbbb$
+stack S b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 12
+curr_state: q_a
+unread_input: aaabbbbbbb$
+stack a S b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 13
+curr_state: q
+unread_input: aaabbbbbbb$
+stack S b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 14
+curr_state: q_a
+unread_input: aabbbbbbb$
+stack S b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 15
+curr_state: q_a
+unread_input: aabbbbbbb$
+stack a S b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 16
+curr_state: q
+unread_input: aabbbbbbb$
+stack S b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 17
+curr_state: q_a
+unread_input: abbbbbbb$
+stack S b b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 18
+curr_state: q_a
+unread_input: abbbbbbb$
+stack a S b b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 19
+curr_state: q
+unread_input: abbbbbbb$
+stack S b b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 20
+curr_state: q_a
+unread_input: bbbbbbb$
+stack S b b b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 21
+curr_state: q_a
+unread_input: bbbbbbb$
+stack a S b b b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 22
+curr_state: q
+unread_input: bbbbbbb$
+stack S b b b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 23
+curr_state: q_b
+unread_input: bbbbbb$
+stack S b b b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 24
+curr_state: q_b
+unread_input: bbbbbb$
+stack b b b b b b b
+delta_rule 8. (q_b, e, S) -> (q_b, e)
+r_rule S -> e
+
+step: 25
+curr_state: q
+unread_input: bbbbbb$
+stack b b b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 26
+curr_state: q_b
+unread_input: bbbbb$
+stack b b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 27
+curr_state: q
+unread_input: bbbbb$
+stack b b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 28
+curr_state: q_b
+unread_input: bbbb$
+stack b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 29
+curr_state: q
+unread_input: bbbb$
+stack b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 30
+curr_state: q_b
+unread_input: bbb$
+stack b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 31
+curr_state: q
+unread_input: bbb$
+stack b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 32
+curr_state: q_b
+unread_input: bb$
+stack b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 33
+curr_state: q
+unread_input: bb$
+stack b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 34
+curr_state: q_b
+unread_input: b$
+stack b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 35
+curr_state: q
+unread_input: b$
+stack b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 36
+curr_state: q_b
+unread_input: $
+stack b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 37
+curr_state: q
+unread_input: $
+stack
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 38
+curr_state: q_$
+unread_input: $
+stack
+delta_rule 6. (q, $, e) -> (q_$, e)
+r_rule null
+
+Accepted Final State Achieved
+initial input:  aaaaaaaabbbbbbbb$
+--------------------------------
+step: 0
+curr_state: p
+unread_input: aaaaaaaabbbbbbbb$
+stack
+delta_rule null
+r_rule null
+
+step: 1
+curr_state: q
+unread_input: aaaaaaaabbbbbbbb$
+stack S
+delta_rule 1. (p, e, e) -> (q, S)
+r_rule null
+
+step: 2
+curr_state: q_a
+unread_input: aaaaaaabbbbbbbb$
+stack S
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 3
+curr_state: q_a
+unread_input: aaaaaaabbbbbbbb$
+stack a S b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 4
+curr_state: q
+unread_input: aaaaaaabbbbbbbb$
+stack S b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 5
+curr_state: q_a
+unread_input: aaaaaabbbbbbbb$
+stack S b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 6
+curr_state: q_a
+unread_input: aaaaaabbbbbbbb$
+stack a S b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 7
+curr_state: q
+unread_input: aaaaaabbbbbbbb$
+stack S b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 8
+curr_state: q_a
+unread_input: aaaaabbbbbbbb$
+stack S b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 9
+curr_state: q_a
+unread_input: aaaaabbbbbbbb$
+stack a S b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 10
+curr_state: q
+unread_input: aaaaabbbbbbbb$
+stack S b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 11
+curr_state: q_a
+unread_input: aaaabbbbbbbb$
+stack S b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 12
+curr_state: q_a
+unread_input: aaaabbbbbbbb$
+stack a S b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 13
+curr_state: q
+unread_input: aaaabbbbbbbb$
+stack S b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 14
+curr_state: q_a
+unread_input: aaabbbbbbbb$
+stack S b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 15
+curr_state: q_a
+unread_input: aaabbbbbbbb$
+stack a S b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 16
+curr_state: q
+unread_input: aaabbbbbbbb$
+stack S b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 17
+curr_state: q_a
+unread_input: aabbbbbbbb$
+stack S b b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 18
+curr_state: q_a
+unread_input: aabbbbbbbb$
+stack a S b b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 19
+curr_state: q
+unread_input: aabbbbbbbb$
+stack S b b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 20
+curr_state: q_a
+unread_input: abbbbbbbb$
+stack S b b b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 21
+curr_state: q_a
+unread_input: abbbbbbbb$
+stack a S b b b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 22
+curr_state: q
+unread_input: abbbbbbbb$
+stack S b b b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 23
+curr_state: q_a
+unread_input: bbbbbbbb$
+stack S b b b b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 24
+curr_state: q_a
+unread_input: bbbbbbbb$
+stack a S b b b b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 25
+curr_state: q
+unread_input: bbbbbbbb$
+stack S b b b b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 26
+curr_state: q_b
+unread_input: bbbbbbb$
+stack S b b b b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 27
+curr_state: q_b
+unread_input: bbbbbbb$
+stack b b b b b b b b
+delta_rule 8. (q_b, e, S) -> (q_b, e)
+r_rule S -> e
+
+step: 28
+curr_state: q
+unread_input: bbbbbbb$
+stack b b b b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 29
+curr_state: q_b
+unread_input: bbbbbb$
+stack b b b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 30
+curr_state: q
+unread_input: bbbbbb$
+stack b b b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 31
+curr_state: q_b
+unread_input: bbbbb$
+stack b b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 32
+curr_state: q
+unread_input: bbbbb$
+stack b b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 33
+curr_state: q_b
+unread_input: bbbb$
+stack b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 34
+curr_state: q
+unread_input: bbbb$
+stack b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 35
+curr_state: q_b
+unread_input: bbb$
+stack b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 36
+curr_state: q
+unread_input: bbb$
+stack b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 37
+curr_state: q_b
+unread_input: bb$
+stack b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 38
+curr_state: q
+unread_input: bb$
+stack b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 39
+curr_state: q_b
+unread_input: b$
+stack b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 40
+curr_state: q
+unread_input: b$
+stack b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 41
+curr_state: q_b
+unread_input: $
+stack b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 42
+curr_state: q
+unread_input: $
+stack
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 43
+curr_state: q_$
+unread_input: $
+stack
+delta_rule 6. (q, $, e) -> (q_$, e)
+r_rule null
+
+Accepted Final State Achieved
+initial input:  aaaaaaaaabbbbbbbbb$
+--------------------------------
+step: 0
+curr_state: p
+unread_input: aaaaaaaaabbbbbbbbb$
+stack
+delta_rule null
+r_rule null
+
+step: 1
+curr_state: q
+unread_input: aaaaaaaaabbbbbbbbb$
+stack S
+delta_rule 1. (p, e, e) -> (q, S)
+r_rule null
+
+step: 2
+curr_state: q_a
+unread_input: aaaaaaaabbbbbbbbb$
+stack S
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 3
+curr_state: q_a
+unread_input: aaaaaaaabbbbbbbbb$
+stack a S b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 4
+curr_state: q
+unread_input: aaaaaaaabbbbbbbbb$
+stack S b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 5
+curr_state: q_a
+unread_input: aaaaaaabbbbbbbbb$
+stack S b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 6
+curr_state: q_a
+unread_input: aaaaaaabbbbbbbbb$
+stack a S b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 7
+curr_state: q
+unread_input: aaaaaaabbbbbbbbb$
+stack S b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 8
+curr_state: q_a
+unread_input: aaaaaabbbbbbbbb$
+stack S b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 9
+curr_state: q_a
+unread_input: aaaaaabbbbbbbbb$
+stack a S b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 10
+curr_state: q
+unread_input: aaaaaabbbbbbbbb$
+stack S b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 11
+curr_state: q_a
+unread_input: aaaaabbbbbbbbb$
+stack S b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 12
+curr_state: q_a
+unread_input: aaaaabbbbbbbbb$
+stack a S b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 13
+curr_state: q
+unread_input: aaaaabbbbbbbbb$
+stack S b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 14
+curr_state: q_a
+unread_input: aaaabbbbbbbbb$
+stack S b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 15
+curr_state: q_a
+unread_input: aaaabbbbbbbbb$
+stack a S b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 16
+curr_state: q
+unread_input: aaaabbbbbbbbb$
+stack S b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 17
+curr_state: q_a
+unread_input: aaabbbbbbbbb$
+stack S b b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 18
+curr_state: q_a
+unread_input: aaabbbbbbbbb$
+stack a S b b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 19
+curr_state: q
+unread_input: aaabbbbbbbbb$
+stack S b b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 20
+curr_state: q_a
+unread_input: aabbbbbbbbb$
+stack S b b b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 21
+curr_state: q_a
+unread_input: aabbbbbbbbb$
+stack a S b b b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 22
+curr_state: q
+unread_input: aabbbbbbbbb$
+stack S b b b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 23
+curr_state: q_a
+unread_input: abbbbbbbbb$
+stack S b b b b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 24
+curr_state: q_a
+unread_input: abbbbbbbbb$
+stack a S b b b b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 25
+curr_state: q
+unread_input: abbbbbbbbb$
+stack S b b b b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 26
+curr_state: q_a
+unread_input: bbbbbbbbb$
+stack S b b b b b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 27
+curr_state: q_a
+unread_input: bbbbbbbbb$
+stack a S b b b b b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 28
+curr_state: q
+unread_input: bbbbbbbbb$
+stack S b b b b b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 29
+curr_state: q_b
+unread_input: bbbbbbbb$
+stack S b b b b b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 30
+curr_state: q_b
+unread_input: bbbbbbbb$
+stack b b b b b b b b b
+delta_rule 8. (q_b, e, S) -> (q_b, e)
+r_rule S -> e
+
+step: 31
+curr_state: q
+unread_input: bbbbbbbb$
+stack b b b b b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 32
+curr_state: q_b
+unread_input: bbbbbbb$
+stack b b b b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 33
+curr_state: q
+unread_input: bbbbbbb$
+stack b b b b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 34
+curr_state: q_b
+unread_input: bbbbbb$
+stack b b b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 35
+curr_state: q
+unread_input: bbbbbb$
+stack b b b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 36
+curr_state: q_b
+unread_input: bbbbb$
+stack b b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 37
+curr_state: q
+unread_input: bbbbb$
+stack b b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 38
+curr_state: q_b
+unread_input: bbbb$
+stack b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 39
+curr_state: q
+unread_input: bbbb$
+stack b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 40
+curr_state: q_b
+unread_input: bbb$
+stack b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 41
+curr_state: q
+unread_input: bbb$
+stack b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 42
+curr_state: q_b
+unread_input: bb$
+stack b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 43
+curr_state: q
+unread_input: bb$
+stack b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 44
+curr_state: q_b
+unread_input: b$
+stack b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 45
+curr_state: q
+unread_input: b$
+stack b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 46
+curr_state: q_b
+unread_input: $
+stack b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 47
+curr_state: q
+unread_input: $
+stack
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 48
+curr_state: q_$
+unread_input: $
+stack
+delta_rule 6. (q, $, e) -> (q_$, e)
+r_rule null
+
+Accepted Final State Achieved
+initial input:  aaaaaaaaaabbbbbbbbbb$
+--------------------------------
+step: 0
+curr_state: p
+unread_input: aaaaaaaaaabbbbbbbbbb$
+stack
+delta_rule null
+r_rule null
+
+step: 1
+curr_state: q
+unread_input: aaaaaaaaaabbbbbbbbbb$
+stack S
+delta_rule 1. (p, e, e) -> (q, S)
+r_rule null
+
+step: 2
+curr_state: q_a
+unread_input: aaaaaaaaabbbbbbbbbb$
+stack S
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 3
+curr_state: q_a
+unread_input: aaaaaaaaabbbbbbbbbb$
+stack a S b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 4
+curr_state: q
+unread_input: aaaaaaaaabbbbbbbbbb$
+stack S b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 5
+curr_state: q_a
+unread_input: aaaaaaaabbbbbbbbbb$
+stack S b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 6
+curr_state: q_a
+unread_input: aaaaaaaabbbbbbbbbb$
+stack a S b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 7
+curr_state: q
+unread_input: aaaaaaaabbbbbbbbbb$
+stack S b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 8
+curr_state: q_a
+unread_input: aaaaaaabbbbbbbbbb$
+stack S b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 9
+curr_state: q_a
+unread_input: aaaaaaabbbbbbbbbb$
+stack a S b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 10
+curr_state: q
+unread_input: aaaaaaabbbbbbbbbb$
+stack S b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 11
+curr_state: q_a
+unread_input: aaaaaabbbbbbbbbb$
+stack S b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 12
+curr_state: q_a
+unread_input: aaaaaabbbbbbbbbb$
+stack a S b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 13
+curr_state: q
+unread_input: aaaaaabbbbbbbbbb$
+stack S b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 14
+curr_state: q_a
+unread_input: aaaaabbbbbbbbbb$
+stack S b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 15
+curr_state: q_a
+unread_input: aaaaabbbbbbbbbb$
+stack a S b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 16
+curr_state: q
+unread_input: aaaaabbbbbbbbbb$
+stack S b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 17
+curr_state: q_a
+unread_input: aaaabbbbbbbbbb$
+stack S b b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 18
+curr_state: q_a
+unread_input: aaaabbbbbbbbbb$
+stack a S b b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 19
+curr_state: q
+unread_input: aaaabbbbbbbbbb$
+stack S b b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 20
+curr_state: q_a
+unread_input: aaabbbbbbbbbb$
+stack S b b b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 21
+curr_state: q_a
+unread_input: aaabbbbbbbbbb$
+stack a S b b b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 22
+curr_state: q
+unread_input: aaabbbbbbbbbb$
+stack S b b b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 23
+curr_state: q_a
+unread_input: aabbbbbbbbbb$
+stack S b b b b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 24
+curr_state: q_a
+unread_input: aabbbbbbbbbb$
+stack a S b b b b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 25
+curr_state: q
+unread_input: aabbbbbbbbbb$
+stack S b b b b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 26
+curr_state: q_a
+unread_input: abbbbbbbbbb$
+stack S b b b b b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 27
+curr_state: q_a
+unread_input: abbbbbbbbbb$
+stack a S b b b b b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 28
+curr_state: q
+unread_input: abbbbbbbbbb$
+stack S b b b b b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 29
+curr_state: q_a
+unread_input: bbbbbbbbbb$
+stack S b b b b b b b b b
+delta_rule 2. (q, a, e) -> (q_a, e)
+r_rule Null
+
+step: 30
+curr_state: q_a
+unread_input: bbbbbbbbbb$
+stack a S b b b b b b b b b b
+delta_rule 7. (q_a, e, S) -> (q_a, aSb)
+r_rule S -> aSb
+
+step: 31
+curr_state: q
+unread_input: bbbbbbbbbb$
+stack S b b b b b b b b b b
+delta_rule 3. (q_a, e, a) -> (q, e)
+r_rule null
+
+step: 32
+curr_state: q_b
+unread_input: bbbbbbbbb$
+stack S b b b b b b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 33
+curr_state: q_b
+unread_input: bbbbbbbbb$
+stack b b b b b b b b b b
+delta_rule 8. (q_b, e, S) -> (q_b, e)
+r_rule S -> e
+
+step: 34
+curr_state: q
+unread_input: bbbbbbbbb$
+stack b b b b b b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 35
+curr_state: q_b
+unread_input: bbbbbbbb$
+stack b b b b b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 36
+curr_state: q
+unread_input: bbbbbbbb$
+stack b b b b b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 37
+curr_state: q_b
+unread_input: bbbbbbb$
+stack b b b b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 38
+curr_state: q
+unread_input: bbbbbbb$
+stack b b b b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 39
+curr_state: q_b
+unread_input: bbbbbb$
+stack b b b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 40
+curr_state: q
+unread_input: bbbbbb$
+stack b b b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 41
+curr_state: q_b
+unread_input: bbbbb$
+stack b b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 42
+curr_state: q
+unread_input: bbbbb$
+stack b b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 43
+curr_state: q_b
+unread_input: bbbb$
+stack b b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 44
+curr_state: q
+unread_input: bbbb$
+stack b b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 45
+curr_state: q_b
+unread_input: bbb$
+stack b b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 46
+curr_state: q
+unread_input: bbb$
+stack b b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 47
+curr_state: q_b
+unread_input: bb$
+stack b b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 48
+curr_state: q
+unread_input: bb$
+stack b b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 49
+curr_state: q_b
+unread_input: b$
+stack b b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 50
+curr_state: q
+unread_input: b$
+stack b
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 51
+curr_state: q_b
+unread_input: $
+stack b
+delta_rule 4. (q, b, e) -> (q_b, e)
+r_rule Null
+
+step: 52
+curr_state: q
+unread_input: $
+stack
+delta_rule 5. (q_b, e, b) -> (q, e)
+r_rule null
+
+step: 53
+curr_state: q_$
+unread_input: $
+stack
+delta_rule 6. (q, $, e) -> (q_$, e)
+r_rule null
+
+Accepted Final State Achieved
